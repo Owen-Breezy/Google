@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Google</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #fff;
+        font-family: Arial, sans-serif;
+        position: relative;
+      }
+
+      .my-logo {
+        position: fixed;
+        top: 15px;
+        left: 15px;
+        z-index: 100;
+      }
+      .my-logo img {
+        width: auto;
+        height: 200px;
+        object-fit: contain;
+      }
+
+      .google-box {
+        text-align: center;
+      }
+      .google {
+        font-size: 64px;
+        font-weight: 800;
+        letter-spacing: -2px;
+      }
+      .google .G { color: #1e90ff; }
+      .google .o1 { color: #ff0000; }
+      .google .o2 { color: #ffd700; }
+      .google .g2 { color: #1e90ff; }
+      .google .l { color: #7cfc00; }
+      .google .e { color: #ff0000; }
+      .sub {
+        opacity: 0.5;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        font-size: 12px;
+        margin-top: 8px;
+      }
+      .search-input {
+        margin-top: 32px;
+        width: 90vw;
+        max-width: 520px;
+        padding: 18px 26px;
+        border-radius: 999px;
+        border: 1px solid #e5e5e5;
+        outline: none;
+        font-size: 16px;
+        text-align: center;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      }
+      .search-input:focus {
+        box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+      }
+      .search-btn {
+        margin-top: 20px;
+        padding: 12px 24px;
+        border: none;
+        background: #f8f9fa;
+        border-radius: 6px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="my-logo">
+      <img src="Owen-breezy logo.png" alt="Owen Breezy | Owami Mzelemu logo">
+    </div>
+
+    <div class="google-box">
+      <h1 class="google">
+        <span class="G">G</span><span class="o1">o</span><span class="o2">o</span><span class="g2">g</span><span class="l">l</span><span class="e">e</span>
+      </h1>
+      <p class="sub">default mode</p>
+      <form action="https://www.google.com/search" method="GET">
+        <input name="q" class="search-input" type="text" placeholder="Search Google or type a URL" autofocus />
+        <br />
+        <button type="submit" class="search-btn">Google Search</button>
+      </form>
+    </div>
+  </body>
+</html>
